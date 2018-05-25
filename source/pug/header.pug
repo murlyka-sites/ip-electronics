@@ -1,0 +1,146 @@
+.s-top
+	.s-top__container
+
+		.s-top__column.s-top__column_slogan
+			.s-top__slogan 85.000 товаров в наличии и на заказ
+		.s-top__column.s-top__column_title
+			.s-top__title Электронные компоненты и расходные материалы
+		.s-top__column.s-top__column_lang
+			.ui-lang.s-top__lang
+				.ui-lang__current
+					.ui-lang__label RU
+					img.ui-lang__flag(src="images/lang/ru.jpg" width="24" height="16")
+					.fa.fa-angle-down.ui-lang__arrow
+				.ui-lang__dropdown
+					.dropdown-lang
+						.dropdown-lang__title Выберите региональные настройки
+						.dropdown-lang__label Язык сайта
+						select.dropdown-lang__select.ui-select.selectpicker
+							option(data-content="<div class='lang-option'><img class='lang-option__icon' src='images/lang/ru.jpg'> <div>Русский</div></div>") Русский
+							option(data-content="<div class='lang-option'><img class='lang-option__icon' src='images/lang/ru.jpg'> <div>Английский</div></div>") Английский
+						.dropdown-lang__label Валюта
+						select.dropdown-lang__select.selectpicker
+							option(data-content="<div class='lang-option'> <span class='fa fa-ruble lang-option__icon'></span> <div>Руб / RUB</div></div>") Руб / RUB
+							option(data-content="<div class='lang-option'> <span class='fa fa-ruble lang-option__icon'></span> <div>Руб / RUB</div></div>") Руб / RUB
+
+		
+		.s-top__column.s-top__column_inline-lang
+			select.ui-select.selectpicker.ui-select-mobile-header
+				option(data-content="<img src='images/lang/ru.jpg' width='24' height='16'>") Русский
+				option(data-content="<img src='images/lang/ru.jpg'>") Английский
+			select.ui-select.selectpicker.ui-select-mobile-header
+				option(data-content="<span class='fa fa-ruble'></span>") Русский
+				option(data-content="<span class='fa fa-ruble'></span>") Английский
+
+		.s-top__column.s-top__column_basket: .ui-header-button
+			.ui-header-button__column.ui-header-button__column_icon
+				svg(width="20" height="20"): use(xlink:href="#basket")
+			.ui-header-button__column.ui-header-button__column_main
+				.ui-header-button__budge 25
+
+		.s-top__column.s-top__column_search
+			button.button-header-bar
+				span.fa.fa-search
+		.s-top__column.s-top__column_burger
+			button.button-header-bar
+				span.fa.fa-bars
+
+		.s-top__column.s-top__column_bar
+			.ui-user-bar.s-top__bar
+				.ui-user-bar__icon.fa.fa-user
+				.ui-user-bar__lable Константин
+				.ui-user-bar__dropdown
+					ul.nav-user-bar
+						li.nav-user-bar__item: a.nav-user-bar__link(href="#") Профиль
+						li.nav-user-bar__item: a.nav-user-bar__link(href="#") Мои заказы
+						li.nav-user-bar__item: a.nav-user-bar__link(href="#") Подписка
+						li.nav-user-bar__item: a.nav-user-bar__link(href="#") Выйти
+.s-header
+	.s-header__container
+		.s-header__column.s-header__column_logo
+			img.s-header__logo(src="images/logo.svg" alt="Логотип: IP electronics" width="270" height="46")
+		.s-header__column.s-header__column_search
+			.ui-search-header
+				input.ui-search-header__field(type="search" placeholder="Номер детали/ключевое слово")
+				.ui-search-header__category
+					.ui-search-header-category
+						.ui-search-header-category__current
+							.ui-search-header-category__label Во всех категориях
+							.ui-search-header-category__arrow.fa.fa-caret-down
+				button.ui-search-header__button.fa.fa-search
+		.s-header__column.s-header__column_fovorites: .ui-header-button
+			.ui-header-button__column.ui-header-button__column_icon
+				svg(width="30" height="26"): use(xlink:href="#heart")
+			.ui-header-button__column.ui-header-button__column_main
+				.ui-header-button__budge 45
+				.ui-header-button__label Избранное
+		.s-header__column.s-header__column_basket: .ui-header-button
+			.ui-header-button__column.ui-header-button__column_icon
+				svg(width="30" height="30"): use(xlink:href="#basket")
+			.ui-header-button__column.ui-header-button__column_main
+				.ui-header-button__budge 25
+				.ui-header-button__label Корзина
+.s-top-nav
+	.s-top-nav__container
+		.s-top-nav__column.s-top-nav__column_button
+			.button-nav.button.button_type_button.button_theme_yellow.button_size_md(data-toggle="collapse" data-target="#catalog")
+				span.fa.fa-bars.button-nav__icon
+				.button-nav__label Категории
+				a.button-nav__more Смотреть все
+
+
+		.s-top-nav__column.s-top-nav__column_nav
+			nav.nav-top
+				ul.nav-top__list
+					li.nav-top__item: a.nav-top__link(href="#") Главная
+					li.nav-top__item: a.nav-top__link(href="#") Доставка и оплата
+					li.nav-top__item: a.nav-top__link(href="#") Акции и Новости
+					li.nav-top__item: a.nav-top__link(href="#") Контакты
+
+
+		.s-top-nav__column.s-top-nav__column_contact
+			.contact-nav
+				.contact-nav__container
+					.contact-nav__column.contact-nav__column_mail
+						span.contact-nav__icon.fa.fa-envelope 
+						.contact-nav__mail info@ippart.com
+					.contact-nav__column.contact-nav__column_phone
+						span.contact-nav__icon.fa.fa-phone
+						.contact-nav__phone 8-800-100-90-86
+					.contact-nav__column.contact-nav__column_info
+						button.contact-nav__info.fa.fa-info
+				.contact-nav__dropdown
+					.dropdown-contact-nav
+						button.dropdown-contact-nav__close: span.fa.fa-times
+						.dropdown-contact-nav__phone 8-800-100-90-86
+						.dropdown-contact-nav__slogan По России звонок бесплатный.
+						.dropdown-contact-nav__schedule.schedule
+							img.schedule__icon(src="images/shedule.png")
+							.schedule__slogan Принимаем звонки c 09:00 до 17:00 по Мск с понедельника по пятницу.
+						.dropdown-contact-nav__unified-mail Единая почта для заявок:
+							.contact-line
+								.contact-line__icon.fa.fa-envelope
+								.contact-line__title.fs-16 info@ippart.com
+						.dropdown-contact-nav__title Офис в Великом Новгороде
+						.dropdown-contact-nav__grid
+							.dropdown-contact-nav__cell
+								.contact-line
+									.contact-line__icon.fa.fa-phone
+									.contact-line__title +7 (8162) 60-02-34
+							.dropdown-contact-nav__cell
+								.contact-line
+									.contact-line__icon.fa.fa-fax
+									.contact-line__title +7 (8162) 60-02-34
+							.dropdown-contact-nav__cell
+								.contact-line
+									.contact-line__icon.fa.fa-skype
+									.contact-line__title IP Electronics ltd
+							.dropdown-contact-nav__cell
+								.contact-line
+									.contact-line__icon.fa.fa-skype
+									.contact-line__title ip-electronics
+						.dropdown-contact-nav__schedule.schedule
+							img.schedule__icon(src="images/shedule.png")
+							.schedule__desc
+								.schedule__title часы работы отдела заказов
+								.schedule__slogan 9:00–17:00  понедельник - пятница

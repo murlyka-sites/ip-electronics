@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Строительные технологии</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE">
+    <meta content="telephone=no" name="format-detection">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;amp;subset=cyrillic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css?ts=1527272527509">
+  </head>
+  <body class="page">
+    <div class="s-top">
+      <div class="s-top__container">
+        <div class="s-top__column s-top__column_slogan">
+          <div class="s-top__slogan">85.000 товаров в наличии и на заказ</div>
+        </div>
+        <div class="s-top__column s-top__column_title">
+          <div class="s-top__title">Электронные компоненты и расходные материалы</div>
+        </div>
+        <div class="s-top__column s-top__column_lang">
+          <div class="ui-lang s-top__lang">
+            <div class="ui-lang__current">
+              <div class="ui-lang__label">RU</div><img class="ui-lang__flag" src="images/lang/ru.jpg" width="24" height="16">
+              <div class="fa fa-angle-down ui-lang__arrow"></div>
+            </div>
+            <div class="ui-lang__dropdown">
+              <div class="dropdown-lang">
+                <div class="dropdown-lang__title">Выберите региональные настройки</div>
+                <div class="dropdown-lang__label">Язык сайта</div>
+                <select class="dropdown-lang__select ui-select selectpicker">
+                  <option data-content="&lt;div class='lang-option'&gt;&lt;img class='lang-option__icon' src='images/lang/ru.jpg'&gt; &lt;div&gt;Русский&lt;/div&gt;&lt;/div&gt;">Русский</option>
+                  <option data-content="&lt;div class='lang-option'&gt;&lt;img class='lang-option__icon' src='images/lang/ru.jpg'&gt; &lt;div&gt;Английский&lt;/div&gt;&lt;/div&gt;">Английский</option>
+                </select>
+                <div class="dropdown-lang__label">Валюта</div>
+                <select class="dropdown-lang__select selectpicker">
+                  <option data-content="&lt;div class='lang-option'&gt; &lt;span class='fa fa-ruble lang-option__icon'&gt;&lt;/span&gt; &lt;div&gt;Руб / RUB&lt;/div&gt;&lt;/div&gt;">Руб / RUB</option>
+                  <option data-content="&lt;div class='lang-option'&gt; &lt;span class='fa fa-ruble lang-option__icon'&gt;&lt;/span&gt; &lt;div&gt;Руб / RUB&lt;/div&gt;&lt;/div&gt;">Руб / RUB</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="s-top__column s-top__column_inline-lang">
+          <select class="ui-select selectpicker ui-select-mobile-header">
+            <option data-content="&lt;img src='images/lang/ru.jpg' width='24' height='16'&gt;">Русский</option>
+            <option data-content="&lt;img src='images/lang/ru.jpg'&gt;">Английский</option>
+          </select>
+          <select class="ui-select selectpicker ui-select-mobile-header">
+            <option data-content="&lt;span class='fa fa-ruble'&gt;&lt;/span&gt;">Русский</option>
+            <option data-content="&lt;span class='fa fa-ruble'&gt;&lt;/span&gt;">Английский</option>
+          </select>
+        </div>
+        <div class="s-top__column s-top__column_basket">
+          <div class="ui-header-button">
+            <div class="ui-header-button__column ui-header-button__column_icon">
+              <svg width="20" height="20">
+                <use xlink:href="#basket"></use>
+              </svg>
+            </div>
+            <div class="ui-header-button__column ui-header-button__column_main">
+              <div class="ui-header-button__budge">25</div>
+            </div>
+          </div>
+        </div>
+        <div class="s-top__column s-top__column_search">
+          <button class="button-header-bar"><span class="fa fa-search"></span></button>
+        </div>
+        <div class="s-top__column s-top__column_burger">
+          <button class="button-header-bar"><span class="fa fa-bars"></span></button>
+        </div>
+        <div class="s-top__column s-top__column_bar">
+          <div class="ui-user-bar s-top__bar">
+            <div class="ui-user-bar__icon fa fa-user"></div>
+            <div class="ui-user-bar__lable">Константин</div>
+            <div class="ui-user-bar__dropdown">
+              <ul class="nav-user-bar">
+                <li class="nav-user-bar__item"><a class="nav-user-bar__link" href="#">Профиль</a></li>
+                <li class="nav-user-bar__item"><a class="nav-user-bar__link" href="#">Мои заказы</a></li>
+                <li class="nav-user-bar__item"><a class="nav-user-bar__link" href="#">Подписка</a></li>
+                <li class="nav-user-bar__item"><a class="nav-user-bar__link" href="#">Выйти</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-header">
+      <div class="s-header__container">
+        <div class="s-header__column s-header__column_logo"><img class="s-header__logo" src="images/logo.svg" alt="Логотип: IP electronics" width="270" height="46"></div>
+        <div class="s-header__column s-header__column_search">
+          <div class="ui-search-header">
+            <input class="ui-search-header__field" type="search" placeholder="Номер детали/ключевое слово">
+            <div class="ui-search-header__category">
+              <div class="ui-search-header-category">
+                <div class="ui-search-header-category__current">
+                  <div class="ui-search-header-category__label">Во всех категориях</div>
+                  <div class="ui-search-header-category__arrow fa fa-caret-down"></div>
+                </div>
+              </div>
+            </div>
+            <button class="ui-search-header__button fa fa-search"></button>
+          </div>
+        </div>
+        <div class="s-header__column s-header__column_fovorites">
+          <div class="ui-header-button">
+            <div class="ui-header-button__column ui-header-button__column_icon">
+              <svg width="30" height="26">
+                <use xlink:href="#heart"></use>
+              </svg>
+            </div>
+            <div class="ui-header-button__column ui-header-button__column_main">
+              <div class="ui-header-button__budge">45</div>
+              <div class="ui-header-button__label">Избранное</div>
+            </div>
+          </div>
+        </div>
+        <div class="s-header__column s-header__column_basket">
+          <div class="ui-header-button">
+            <div class="ui-header-button__column ui-header-button__column_icon">
+              <svg width="30" height="30">
+                <use xlink:href="#basket"></use>
+              </svg>
+            </div>
+            <div class="ui-header-button__column ui-header-button__column_main">
+              <div class="ui-header-button__budge">25</div>
+              <div class="ui-header-button__label">Корзина</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-top-nav">
+      <div class="s-top-nav__container">
+        <div class="s-top-nav__column s-top-nav__column_button">
+          <div class="button-nav button button_type_button button_theme_yellow button_size_md" data-toggle="collapse" data-target="#catalog"><span class="fa fa-bars button-nav__icon"></span>
+            <div class="button-nav__label">Категории</div><a class="button-nav__more">Смотреть все</a>
+          </div>
+        </div>
+        <div class="s-top-nav__column s-top-nav__column_nav">
+          <nav class="nav-top">
+            <ul class="nav-top__list">
+              <li class="nav-top__item"><a class="nav-top__link" href="#">Главная</a></li>
+              <li class="nav-top__item"><a class="nav-top__link" href="#">Доставка и оплата</a></li>
+              <li class="nav-top__item"><a class="nav-top__link" href="#">Акции и Новости</a></li>
+              <li class="nav-top__item"><a class="nav-top__link" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="s-top-nav__column s-top-nav__column_contact">
+          <div class="contact-nav">
+            <div class="contact-nav__container">
+              <div class="contact-nav__column contact-nav__column_mail"><span class="contact-nav__icon fa fa-envelope"> </span>
+                <div class="contact-nav__mail">info@ippart.com</div>
+              </div>
+              <div class="contact-nav__column contact-nav__column_phone"><span class="contact-nav__icon fa fa-phone"></span>
+                <div class="contact-nav__phone">8-800-100-90-86</div>
+              </div>
+              <div class="contact-nav__column contact-nav__column_info">
+                <button class="contact-nav__info fa fa-info"></button>
+              </div>
+            </div>
+            <div class="contact-nav__dropdown">
+              <div class="dropdown-contact-nav">
+                <button class="dropdown-contact-nav__close"><span class="fa fa-times"></span></button>
+                <div class="dropdown-contact-nav__phone">8-800-100-90-86</div>
+                <div class="dropdown-contact-nav__slogan">По России звонок бесплатный.</div>
+                <div class="dropdown-contact-nav__schedule schedule"><img class="schedule__icon" src="images/shedule.png">
+                  <div class="schedule__slogan">Принимаем звонки c 09:00 до 17:00 по Мск с понедельника по пятницу.</div>
+                </div>
+                <div class="dropdown-contact-nav__unified-mail">Единая почта для заявок:
+                  <div class="contact-line">
+                    <div class="contact-line__icon fa fa-envelope"></div>
+                    <div class="contact-line__title fs-16">info@ippart.com</div>
+                  </div>
+                </div>
+                <div class="dropdown-contact-nav__title">Офис в Великом Новгороде</div>
+                <div class="dropdown-contact-nav__grid">
+                  <div class="dropdown-contact-nav__cell">
+                    <div class="contact-line">
+                      <div class="contact-line__icon fa fa-phone"></div>
+                      <div class="contact-line__title">+7 (8162) 60-02-34</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-contact-nav__cell">
+                    <div class="contact-line">
+                      <div class="contact-line__icon fa fa-fax"></div>
+                      <div class="contact-line__title">+7 (8162) 60-02-34</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-contact-nav__cell">
+                    <div class="contact-line">
+                      <div class="contact-line__icon fa fa-skype"></div>
+                      <div class="contact-line__title">IP Electronics ltd</div>
+                    </div>
+                  </div>
+                  <div class="dropdown-contact-nav__cell">
+                    <div class="contact-line">
+                      <div class="contact-line__icon fa fa-skype"></div>
+                      <div class="contact-line__title">ip-electronics</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown-contact-nav__schedule schedule"><img class="schedule__icon" src="images/shedule.png">
+                  <div class="schedule__desc">
+                    <div class="schedule__title">часы работы отдела заказов</div>
+                    <div class="schedule__slogan">9:00–17:00  понедельник - пятница</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-breadcrumbs">
+      <div class="s-breadcrumbs__container">
+        <nav class="nav-breadcrumbs">
+          <ul class="nav-breadcrumbs__list">
+            <li class="nav-breadcrumbs__item"><a class="nav-breadcrumbs__link" href="#">Главная</a></li>
+            <li class="nav-breadcrumbs__item"><a class="nav-breadcrumbs__link" href="#">Каталог</a></li>
+            <li class="nav-breadcrumbs__item"><span class="nav-breadcrumbs__link nav-breadcrumbs__link_active">Электронные компоненты</span></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <div class="s-catalog-category">
+      <div class="container">
+        <div class="row">
+          <div class="s-catalog-category__container">
+            <div class="s-catalog-category__column s-catalog-category__column_category">
+              <div class="tree-category">
+                <h3 class="tree-category__title">Уточните категорию</h3>
+                <ul class="tree-category__list">
+                  <li class="tree-category__item"><a class="tree-category__box" href="#tree-category-1" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span>
+                    <ul class="tree-category__list collapse" id="tree-category-1">
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                    </ul>
+                  </li>
+                  <li class="tree-category__item text-blue"><a class="tree-category__box" href="#tree-category-2" data-toggle="collapse"></a><a class="tree-category__link decor-dashed" href="#">Интегральные схемы</a><span class="tree-category__count">(1289)</span>
+                    <ul class="tree-category__list collapse show" id="tree-category-2">
+                      <li class="tree-category__item"><a class="tree-category__box" href="#tree-category-2-1" data-toggle="collapse"></a><a class="tree-category__link" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(77)</span>
+                        <ul class="tree-category__list collapse" id="tree-category-2-1">
+                          <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                          <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                          <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                        </ul>
+                      </li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">Интегральные логические схемы</a><span class="tree-category__count">(78)</span></li>
+                      <li class="tree-category__item tree-category__item_dot text-dark"><a class="tree-category__link" href="#">Коммутаторы</a><span class="tree-category__count"> (7)</span></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">Контроллеры</a><span class="tree-category__count"> (81)</span></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">Микроконтроллеры</a><span class="tree-category__count"> (4)</span></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">Микросхемы для бытовой РЭА</a><span class="tree-category__count"> (34)</span></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">Многофункциональные</a><span class="tree-category__count"> (2)</span></li>
+                      <li class="tree-category__item"><a class="tree-category__box" href="#tree-category-2-8" data-toggle="collapse"></a><a class="tree-category__link" href="#">Память </a><span class="tree-category__count"> (84)</span>
+                        <ul class="tree-category__list collapse" id="tree-category-2-8">
+                          <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                          <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                          <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                        </ul>
+                      </li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">Разное</a><span class="tree-category__count"> (164)</span></li>
+                      <li class="tree-category__item"><a class="tree-category__box" href="#tree-category-2-10" data-toggle="collapse"></a><a class="tree-category__link" href="#">Регуляторы напряжения</a><span class="tree-category__count"> (168)</span>
+                        <ul class="tree-category__list collapse" id="tree-category-2-10">
+                          <li class="tree-category__item tree-category__item"><a class="tree-category__link" href="#">1</a></li>
+                          <li class="tree-category__item tree-category__item"><a class="tree-category__link" href="#">2</a></li>
+                          <li class="tree-category__item tree-category__item"><a class="tree-category__link" href="#">3</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="tree-category__item"><a class="tree-category__box" href="#tree-category-3" data-toggle="collapse"></a><a class="tree-category__link decor-dashed" href="#">Пассивные компоненты</a><span class="tree-category__count">(4425)</span>
+                    <ul class="tree-category__list collapse" id="tree-category-3">
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                    </ul>
+                  </li>
+                  <li class="tree-category__item"><a class="tree-category__box" href="#tree-category-4" data-toggle="collapse"></a><a class="tree-category__link decor-dashed" href="#">Полупроводники</a><span class="tree-category__count">(1978)</span>
+                    <ul class="tree-category__list collapse" id="tree-category-4">
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                    </ul>
+                  </li>
+                  <li class="tree-category__item"><a class="tree-category__box" href="#tree-category-5" data-toggle="collapse"></a><a class="tree-category__link decor-dashed" href="#">Электровакуумные приборы</a><span class="tree-category__count">(560)</span>
+                    <ul class="tree-category__list collapse" id="tree-category-5">
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                      <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="s-catalog-category__column s-catalog-category__column_main">
+              <h2 class="h2 s-catalog-category__title">Электронные компоненты</h2>
+              <div class="s-catalog-category__grid">
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/1.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-1" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-1">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/2.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-2" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-2">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/3.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-3" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-3">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/4.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-4" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-4">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/5.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-5" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-5">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/6.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-6" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-6">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/7.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-7" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-7">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="s-catalog-category__cell">
+                  <div class="c-catalog-category">
+                    <div class="c-catalog-category__column c-catalog-category__column_pr"><img class="c-catalog-category__pr" src="images/catalog-category/8.jpg" width="48" height="48"></div>
+                    <div class="c-catalog-category__column c-catalog-category__column_main">
+                      <div class="tree-category">
+                        <ul class="tree-category__list">
+                          <li class="tree-category__item"><a class="tree-category__box" href="#main-tree-category-8" data-toggle="collapse"></a><a class="tree-category__link text-dark decor-dashed" href="#">Аналоговые и смешанные схемы</a><span class="tree-category__count">(79)</span></li>
+                          <ul class="tree-category__list collapse" id="main-tree-category-8">
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">1</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">2</a></li>
+                            <li class="tree-category__item tree-category__item_dot"><a class="tree-category__link" href="#">3</a></li>
+                          </ul>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-last-news-2">
+      <div class="s-last-news-2__container">
+        <div class="s-last-news-2__column s-last-news-2__column_news">
+          <h2 class="h2 s-last-news-2__title">ПОСЛЕДНИЕ НОВОСТИ</h2>
+          <div class="s-last-news-2__grid">
+            <div class="s-last-news-2__card">
+              <div class="c-last-news-2"><a class="c-last-news-2__date" href="#">27 июля 2017</a>
+                <div class="c-last-news-2__desc">Только в компании ippart, до 1 июля 2017 года, Вы можете бесплатно взять на тестирование уникальный датчик OPB9000. Спешите, количество наборов ограничено. Испытайте БЕСПЛАТНО демонстрационный набор.</div>
+              </div>
+            </div>
+            <div class="s-last-news-2__card">
+              <div class="c-last-news-2"><a class="c-last-news-2__date" href="#">27 июля 2017</a>
+                <div class="c-last-news-2__desc">Только в компании ippart, до 1 июля 2017 года, Вы можете бесплатно взять на тестирование уникальный датчик OPB9000. Спешите, количество наборов ограничено. Испытайте БЕСПЛАТНО демонстрационный набор.</div>
+              </div>
+            </div>
+          </div><a class="s-last-news__more" href="#"><span class="s-last-news__more-icon fa fa-list-ul"></span>смотреть все новости</a>
+        </div>
+        <div class="s-last-news-2__column s-last-news-2__column_subscribe">
+          <div class="c-subscribe-2">
+            <div class="c-subscribe-2__inner">
+              <div class="c-subscribe-2__title">Не пропусти важные новости</div>
+              <div class="c-subscribe-2__slogan">Подпишись на рассылку, получай свежую информацию по продажам, новостям, акциям</div>
+              <input class="c-subscribe-2__field field-subscribe" placeholder="Укажите ваш email">
+              <button class="c-subscribe-2__button button button_theme_blue button_size_sm">подписаться</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="s-conctact">
+      <div class="s-contact__container">
+        <div class="s-contact__column s-contact__column_payments">
+          <div class="s-contact__title">Принимаем к оплате</div>
+          <div class="contact-payments"><img class="contact-payments__item" width="70" height="34" alt="" src="images/payments/visa.png"><img class="contact-payments__item" width="70" height="34" alt="" src="images/payments/mastercard.png"><img class="contact-payments__item" width="70" height="34" alt="" src="images/payments/yandexmoney.png"><img class="contact-payments__item" width="70" height="34" alt="" src="images/payments/sberbank.png"><img class="contact-payments__item" width="70" height="34" alt="" src="images/payments/qiwi.png"></div>
+        </div>
+        <div class="s-contact__column s-contact__column_social">
+          <div class="s-contact__title">IP Electronics в соцсетях</div>
+          <div class="contact-social"><a class="contact-social__item" href="#"><img class="contact-social__icon" src="images/social/vk.png"></a><a class="contact-social__item" href="#"><img class="contact-social__icon" src="images/social/fb.png"></a><a class="contact-social__item" href="#"><img class="contact-social__icon" src="images/social/tw.png"></a></div>
+        </div>
+        <div class="s-contact__column s-contact__column_contact">
+          <div class="s-contact__title">Связь с нами</div>
+          <div class="contact-contact">
+            <div class="contact-contact__line">
+              <div class="contact-contact__icon fa fa-phone"></div>
+              <div class="contact-contact__label">8-800-100-90-86</div>
+            </div>
+            <div class="contact-contact__line contact-contact__line_mail">
+              <div class="contact-contact__icon fa fa-envelope"></div>
+              <div class="contact-contact__label">info@ippart.com</div>
+            </div><a class="contact-contact__more" href="#">все контакты</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="s-foo">
+      <div class="s-foo__container">
+        <div class="s-foo__nav">
+          <nav class="nav-foo">
+            <div class="nav-foo__group">
+              <h2 class="nav-foo__title">Информация</h2>
+              <ul class="nav-foo__list">
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">О компании</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Доставка и оплата</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Прайс-лист</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Купим (постоянно)</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Оплата QIWI</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Личный Кабинет</a></li>
+              </ul>
+            </div>
+            <div class="nav-foo__group">
+              <h2 class="nav-foo__title">Служба поддержки</h2>
+              <ul class="nav-foo__list">
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Связаться с нами</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Возврат товара</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Карта сайта</a></li>
+              </ul>
+            </div>
+            <div class="nav-foo__group">
+              <h2 class="nav-foo__title">Информация</h2>
+              <ul class="nav-foo__list">
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Производители (бренды)</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Подарочные сертификаты</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Партнёрская программа</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Акции и новости</a></li>
+              </ul>
+            </div>
+            <div class="nav-foo__group">
+              <h2 class="nav-foo__title">Личный кабинет</h2>
+              <ul class="nav-foo__list">
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Личный Кабинет</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">История заказов</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Закладки</a></li>
+                <li class="nav-foo__item"><a class="nav-foo__link" href="#">Рассылка</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="s-foo__row">
+          <div class="s-foo__column s-foo__column_slogan">
+            <div class="s-foo__slogan">Приборы, Радиодетали и Электронные компоненты</div>
+          </div>
+          <div class="s-foo__column s-foo__column_copy">
+            <div class="s-foo__copy">© Ай-Пи Электроникс, 2002—2017</div>
+          </div>
+          <div class="s-foo__column s-foo__column_dev">
+            <div class="foo-dev"><img class="foo-dev__logo" src="images/art-gorka.png" width="60" height="53" alt="Логотип: Art gorka">
+              <div class="foo-dev__name">Дизайн сайта – <a class="foo-dev__link" href="#">студия ART горка</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div style="display: none">
+      <svg width="0" height="0" hidden version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+          <symbol id="heart" viewBox="0 0 471.701 471.701">
+            <path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z"></path>
+          </symbol>
+          <symbol id="basket" viewBox="0 0 510 510">
+            <path d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306			c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7			c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408			c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z"></path>
+          </symbol>
+          <symbol id="search" viewBox="0 0 56.966 56.966">
+            <path d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23 s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92 c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17 s-17-7.626-17-17S14.61,6,23.984,6z"></path>
+          </symbol>
+        </defs>
+      </svg>
+    </div>
+    <div class="mobile-menu">
+      <header class="mobile-menu__header">
+        <div class="mobile-menu__menu">
+          <div class="mobile-menu__icon fa fa-bars"></div>
+          <div class="mobile-menu__label">Меню </div>
+        </div>
+        <div class="mobile-menu__close fa fa-times"></div>
+      </header>
+      <ul class="mobile-menu__list">
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon fa fa-th-large"> </div>
+            <div class="mobile-menu__label">Каталог товаров</div></a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon fa fa-shopping-basket"> </div>
+            <div class="mobile-menu__label">Корзина</div>
+            <div class="mobile-menu__badge">25</div></a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon fa fa-user"></div>
+            <div class="mobile-menu__label">Личный кабинет</div></a></li>
+        <li class="mobile-menu__item mobile-menu__item_open"><a class="mobile-menu__link">
+            <div class="mobile-menu__icon"></div>
+            <div class="mobile-menu__label">Информация</div>
+            <div class="mobile-menu__caret fa fa-chevron-down"></div></a>
+          <ul class="mobile-menu__sublist" id="mobile-menu-info">
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">О компании</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Доставка и оплата</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Прайс лист	</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">купим (постоянно)</a></li>
+            <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">Оплата QIWI</a></li>
+          </ul>
+        </li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon"></div>
+            <div class="mobile-menu__label">Служба поддержки</div>
+            <div class="mobile-menu__caret fa fa-chevron-down"></div></a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon"></div>
+            <div class="mobile-menu__label">Дополнительно</div>
+            <div class="mobile-menu__caret fa fa-chevron-down"></div></a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon"></div>
+            <div class="mobile-menu__label">Связаться с нами</div></a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon fa fa-phone"></div>
+            <div class="mobile-menu__label">+7 (8162) 33-90-66</div></a></li>
+        <li class="mobile-menu__item"><a class="mobile-menu__link" href="#">
+            <div class="mobile-menu__icon"></div>
+            <div class="mobile-menu__label">Полная версия сайта</div></a></li>
+      </ul>
+    </div>
+    <div class="mobile-search hidden">
+      <div class="mobile-search__header">
+        <div class="mobile-search__label">Поиск</div>
+        <div class="mobile-search__close fa fa-times"></div>
+      </div>
+      <div class="mobile-search__main">
+        <div class="ui-search-header">
+          <input class="ui-search-header__field" type="search" placeholder="Номер детали/ключевое слово">
+          <div class="ui-search-header__category">
+            <div class="ui-search-header-category">
+              <div class="ui-search-header-category__current">
+                <div class="ui-search-header-category__label">Во всех категориях</div>
+                <div class="ui-search-header-category__arrow fa fa-caret-down"></div>
+              </div>
+            </div>
+          </div>
+          <button class="ui-search-header__button fa fa-search"></button>
+        </div>
+      </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

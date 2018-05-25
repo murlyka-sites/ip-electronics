@@ -1,0 +1,130 @@
+.s-contact {
+	&__container {
+		padding 15px 		
+		
+		@media (min-width 768px) {
+			container()
+			
+			display flex
+			padding 25px 15px
+		}
+	}
+	
+	&__column {
+		padding 10px 0
+		
+		@media (min-width 768px) {
+			margin-right 30px
+			flex none
+		}
+		
+		@media (min-width 992px) {
+			margin-right 50px
+		}
+		
+		@media (min-width 1220px) {
+			margin-right 120px
+		}
+		
+		&:last-child {
+			margin-right 0
+		}
+		
+		&_payments {
+			flex auto
+		}
+		
+	}
+	
+	&__title {
+		margin-bottom 15px
+		color #283346
+		font-size 16px
+		text-align center
+		
+		@media (min-width 768px) {
+			margin-bottom 25px 
+			text-align left
+		}
+	}
+}
+
+.contact-payments {
+	font-size 0
+	text-align center
+	
+	@media (min-width 768px) {
+		margin-right -30px
+		text-align left
+	}
+	
+	&__item {
+		display inline-block
+		margin 0 10px 20px
+		
+		@media (min-width 768px) {
+			margin 0 30px 20px 0
+		}
+	}
+}
+
+.contact-social {
+	text-align center
+	
+	@media (min-width 768px) {
+		text-align left	
+	}
+	
+	&__item {
+		margin-right 20px
+		
+		@media (min-width 992px) {
+			margin-right 30px
+		}
+		
+		&:hover {
+			opacity 0.7
+		}
+	}
+}
+
+.contact-contact {
+	text-align center
+	
+	@media (min-width 768px) {
+		text-align left
+	}
+	
+	&__line {
+		display flex
+		justify-content center
+		align-items center
+		margin-bottom 10px
+		font-size 24px
+		
+		@media (min-width 768px) {
+			justify-content flex-start
+		}
+		
+		&_mail {
+			font-size 16px
+		}
+	}
+	
+	&__icon {
+		width 15px 
+		margin-right 10px 
+		color #256eab
+		font-size 16px 
+	}
+	
+	&__more {
+		text-decoration underline
+		cursor pointer
+		color inherit
+		
+		&:hover {
+			text-decoration none
+		}
+	}
+}

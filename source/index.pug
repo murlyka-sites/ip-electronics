@@ -1,0 +1,479 @@
+- let ts = + new Date;
+
+doctype html
+html(lang="ru")
+	head
+		title Строительные технологии
+		meta(charset="UTF-8")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+		meta(name="SKYPE_TOOLBAR", content="SKYPE_TOOLBAR_PARSER_COMPATIBLE")
+		meta(content="telephone=no", name="format-detection")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&amp;subset=cyrillic")
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css")
+		link(rel="stylesheet", href="css/style.css?ts=" + ts)
+
+	body.page
+		include pug/header
+		
+
+		.g-main
+			.aside-with-section
+				.aside-with-section__group.collapse#catalog
+					include pug/aside-nav
+				.aside-with-section__group.xs-hidden
+					include pug/aside-we
+			.s-main
+				.s-main__container: .s-main__column
+					.swiper-container.s-main__slider
+						.swiper-wrapper
+							.swiper-slide
+								.b-main
+									.b-main__title 85.000 товаров
+									button.button.button_theme_green.button_size_sm.b-main__button со склада и на заказ
+										img.b-main__xls(src="images/xls.png", alt="")
+									.b-main__slogan
+										| Доставка
+										br
+										| по РФ и СНГ
+							.swiper-slide
+								.b-main
+									.b-main__title 85.000 товаров
+									button.button.button_theme_green.button_size_sm.b-main__button со склада и на заказ
+										img.b-main__xls(src="images/xls.png", alt="")
+									.b-main__slogan
+										| Доставка
+										br
+										| по РФ и СНГ
+						.s-main__prev: img(src="images/main-prev.png")
+						.s-main__next: img(src="images/main-next.png")
+						.s-main__pagination
+					.s-main__foo: .main-foo
+						.main-foo__column: b.text-uppercase
+							| минимальный заказ
+							br
+							| без учета доставки
+						.main-foo__column.fs-18
+							.main-foo__icon.fa.fa-users
+							b 1500 руб. 
+							| для юр. лиц
+						.main-foo__column.fs-18
+							.main-foo__icon.fa.fa-user
+							| 300 руб. для физ. лиц
+			.bg-pattern()
+				
+				.s-catalog-attention
+					.s-catalog-attention__container
+						.s-catalog-attention__column
+							h2.h2.s-catalog-attention__title Обратите внимание
+							.s-catalog-attention__grid
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/1.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Галетные переключатели
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/2.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Электровакуумные приборы
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/3.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Микропереключатели
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/4.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Провода монтажные
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/5.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Реле
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/6.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Резисторы
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/7.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Разъемы цилиндрические
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/8.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Клеммники, блоки зажимов
+								.s-catalog-attention__card
+									.c-catalog-attention
+										img.c-catalog-attention__pr(src="images/catalog-attention/9.jpg" width="220" height="180")
+										a.c-catalog-attention__title(href="#") Интегральный схемы
+
+							button.s-catalog-attention__button.button.button_theme_blue.button_size_sm смотреть весь каталог
+				
+				.s-catalog-news
+					.s-catalog-news__container: .s-catalog-news__column
+						h2.h2.s-catalog-news__title Новые поступления
+								//- 
+						.swiper-container.sm-hidden.md-hidden.lg-hidden.s-catalog-news__slider
+							.swiper-wrapper
+								.swiper-slide: .c-catalog
+									header.c-catalog__header
+										img.c-catalog__logo(src="images/catalog/logo.png" width="113" height="11")
+										.c-catalog__bar
+											.c-catalog__ctrl
+												img(src="images/heart.png", alt="")
+											.c-catalog__ctrl
+												img(src="images/compare.png", alt="")
+									img.c-catalog__pr(src="images/catalog/1.jpg" width="240" height="240")
+									a.c-catalog__title(href="#") GZ-14U Колодка соединительная Relpol
+									.c-catalog__from от 3103.80 руб. (шт)
+									.c-catalog__table: table.c-catalog-table
+										tr.c-catalog-table__tr.text-separated-blue
+											th.c-catalog-table__th.fs-14 Цены с НДС
+											th.c-catalog-table__th
+											th.c-catalog-table__th.fs-12 Наличие
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-red.fs-18 7650.00 ₽
+											td.c-catalog-table__td.text-red
+												span.button-with-catalog от 100 штук 
+											td.c-catalog-table__td.text-separated-blue.fs-12 1 (шт)
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-separated-blue.fs-18 53.10 ₽
+											td.c-catalog-table__td.text-separated-blue.fs-12
+												span.button-with-catalog от 1 шт.
+											td.c-catalog-table__td
+												.button-with-model SN-5640
+									
+			
+
+									footer.c-catalog__foo
+										button.button.button_type_button.button_theme_yellow.button_size_sm.c-catalog__button Заказать в 1 клик
+										.c-catalog__buy
+											.field-count.c-catalog__buy-field
+												button.field-count__button.field-count__button_disable.field-count__button_less(disabled) -
+												input.field-count__field(type="text" value="1")
+												button.field-count__button.field-count__button_more +
+											button.button.button_theme_blue.button_size_sm.c-catalog__buy-button
+												img.button__icon(src="images/basket.png", alt="" width="18" height="19")
+												| В корзину
+
+								.swiper-slide: .c-catalog
+									header.c-catalog__header
+										img.c-catalog__logo(src="images/catalog/logo.png" width="113" height="11")
+										.c-catalog__bar
+											.c-catalog__ctrl
+												img(src="images/heart.png", alt="")
+											.c-catalog__ctrl
+												img(src="images/compare.png", alt="")
+									img.c-catalog__pr(src="images/catalog/1.jpg" width="240" height="240")
+									a.c-catalog__title(href="#") GZ-14U Колодка соединительная Relpol
+									.c-catalog__from от 3103.80 руб. (шт)
+									.c-catalog__table: table.c-catalog-table
+										tr.c-catalog-table__tr.text-separated-blue
+											th.c-catalog-table__th.fs-14 Цены с НДС
+											th.c-catalog-table__th
+											th.c-catalog-table__th.fs-12 Наличие
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-red.fs-18 7650.00 ₽
+											td.c-catalog-table__td.text-red
+												span.button-with-catalog от 100 штук 
+											td.c-catalog-table__td.text-separated-blue.fs-12 1 (шт)
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-separated-blue.fs-18 53.10 ₽
+											td.c-catalog-table__td.text-separated-blue.fs-12
+												span.button-with-catalog от 1 шт.
+											td.c-catalog-table__td
+												.button-with-model SN-5640
+									
+			
+
+									footer.c-catalog__foo
+										button.button.button_type_button.button_theme_yellow.button_size_sm.c-catalog__button Заказать в 1 клик
+										.c-catalog__buy
+											.field-count.c-catalog__buy-field
+												button.field-count__button.field-count__button_disable.field-count__button_less(disabled) -
+												input.field-count__field(type="text" value="1")
+												button.field-count__button.field-count__button_more +
+											button.button.button_theme_blue.button_size_sm.c-catalog__buy-button
+												img.button__icon(src="images/basket.png", alt="" width="18" height="19")
+												| В корзину
+							
+								.swiper-slide: .c-catalog
+									header.c-catalog__header
+										img.c-catalog__logo(src="images/catalog/logo.png" width="113" height="11")
+										.c-catalog__bar
+											.c-catalog__ctrl
+												img(src="images/heart.png", alt="")
+											.c-catalog__ctrl
+												img(src="images/compare.png", alt="")
+									img.c-catalog__pr(src="images/catalog/1.jpg" width="240" height="240")
+									a.c-catalog__title(href="#") GZ-14U Колодка соединительная Relpol
+									.c-catalog__from от 3103.80 руб. (шт)
+									.c-catalog__table: table.c-catalog-table
+										tr.c-catalog-table__tr.text-separated-blue
+											th.c-catalog-table__th.fs-14 Цены с НДС
+											th.c-catalog-table__th
+											th.c-catalog-table__th.fs-12 Наличие
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-red.fs-18 7650.00 ₽
+											td.c-catalog-table__td.text-red
+												span.button-with-catalog от 100 штук 
+											td.c-catalog-table__td.text-separated-blue.fs-12 1 (шт)
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-separated-blue.fs-18 53.10 ₽
+											td.c-catalog-table__td.text-separated-blue.fs-12
+												span.button-with-catalog от 1 шт.
+											td.c-catalog-table__td
+												.button-with-model SN-5640
+								
+		
+
+									footer.c-catalog__foo
+										button.button.button_type_button.button_theme_yellow.button_size_sm.c-catalog__button Заказать в 1 клик
+										.c-catalog__buy
+											.field-count.c-catalog__buy-field
+												button.field-count__button.field-count__button_disable.field-count__button_less(disabled) -
+												input.field-count__field(type="text" value="1")
+												button.field-count__button.field-count__button_more +
+											button.button.button_theme_blue.button_size_sm.c-catalog__buy-button
+												img.button__icon(src="images/basket.png", alt="" width="18" height="19")
+												| В корзину
+							button.s-catalog-news__prev
+								img(src="images/prev.png", alt="")
+							button.s-catalog-news__next
+								img(src="images/next.png", alt="")
+						.s-catalog-news__grid.xs-hidden
+							.s-catalog-news__card
+								.c-catalog
+									header.c-catalog__header
+										img.c-catalog__logo(src="images/catalog/logo.png" width="113" height="11")
+										.c-catalog__bar
+											.c-catalog__ctrl
+												img(src="images/heart.png", alt="")
+											.c-catalog__ctrl
+												img(src="images/compare.png", alt="")
+									img.c-catalog__pr(src="images/catalog/1.jpg" width="240" height="240")
+									a.c-catalog__title(href="#") GZ-14U Колодка соединительная Relpol
+									.c-catalog__from от 3103.80 руб. (шт)
+									.c-catalog__table: table.c-catalog-table
+										tr.c-catalog-table__tr.text-separated-blue
+											th.c-catalog-table__th.fs-14 Цены с НДС
+											th.c-catalog-table__th
+											th.c-catalog-table__th.fs-12 Наличие
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-red.fs-18 7650.00 ₽
+											td.c-catalog-table__td.text-red
+												span.button-with-catalog от 100 штук 
+											td.c-catalog-table__td.text-separated-blue.fs-12 1 (шт)
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-separated-blue.fs-18 53.10 ₽
+											td.c-catalog-table__td.text-separated-blue.fs-12
+												span.button-with-catalog от 1 шт.
+											td.c-catalog-table__td
+												.button-with-model SN-5640
+								
+		
+
+									footer.c-catalog__foo
+										button.button.button_type_button.button_theme_yellow.button_size_sm.c-catalog__button Заказать в 1 клик
+										.c-catalog__buy
+											.field-count.c-catalog__buy-field
+												button.field-count__button.field-count__button_disable.field-count__button_less(disabled) -
+												input.field-count__field(type="text" value="1")
+												button.field-count__button.field-count__button_more +
+											button.button.button_theme_blue.button_size_sm.c-catalog__buy-button
+												img.button__icon(src="images/basket.png", alt="" width="18" height="19")
+												| В корзину
+
+
+
+						
+							.s-catalog-news__card
+								.c-catalog
+									header.c-catalog__header
+										img.c-catalog__logo(src="images/catalog/logo.png" width="113" height="11")
+										.c-catalog__bar
+											.c-catalog__ctrl
+												img(src="images/heart.png", alt="")
+											.c-catalog__ctrl
+												img(src="images/compare.png", alt="")
+									img.c-catalog__pr(src="images/catalog/1.jpg" width="240" height="240")
+									a.c-catalog__title(href="#") GZ-14U Колодка соединительная Relpol
+									.c-catalog__from от 3103.80 руб. (шт)
+									.c-catalog__table: table.c-catalog-table
+										tr.c-catalog-table__tr.text-separated-blue
+											th.c-catalog-table__th.fs-14 Цены с НДС
+											th.c-catalog-table__th
+											th.c-catalog-table__th.fs-12 Наличие
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-red.fs-18 7650.00 ₽
+											td.c-catalog-table__td.text-red
+												span.button-with-catalog от 100 штук 
+											td.c-catalog-table__td.text-separated-blue.fs-12 1 (шт)
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-separated-blue.fs-18 53.10 ₽
+											td.c-catalog-table__td.text-separated-blue.fs-12
+												span.button-with-catalog от 1 шт.
+											td.c-catalog-table__td
+												.button-with-model SN-5640
+									
+			
+
+									footer.c-catalog__foo
+										button.button.button_type_button.button_theme_yellow.button_size_sm.c-catalog__button Заказать в 1 клик
+										.c-catalog__buy
+											.field-count.c-catalog__buy-field
+												button.field-count__button.field-count__button_disable.field-count__button_less(disabled) -
+												input.field-count__field(type="text" value="1")
+												button.field-count__button.field-count__button_more +
+											button.button.button_theme_blue.button_size_sm.c-catalog__buy-button
+												img.button__icon(src="images/basket.png", alt="" width="18" height="19")
+												| В корзину
+							
+							.s-catalog-news__card
+								.c-catalog
+									header.c-catalog__header
+										img.c-catalog__logo(src="images/catalog/logo.png" width="113" height="11")
+										.c-catalog__bar
+											.c-catalog__ctrl
+												img(src="images/heart.png", alt="")
+											.c-catalog__ctrl
+												img(src="images/compare.png", alt="")
+									img.c-catalog__pr(src="images/catalog/1.jpg" width="240" height="240")
+									a.c-catalog__title(href="#") GZ-14U Колодка соединительная Relpol
+									.c-catalog__from от 3103.80 руб. (шт)
+									.c-catalog__table: table.c-catalog-table
+										tr.c-catalog-table__tr.text-separated-blue
+											th.c-catalog-table__th.fs-14 Цены с НДС
+											th.c-catalog-table__th
+											th.c-catalog-table__th.fs-12 Наличие
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-red.fs-18 7650.00 ₽
+											td.c-catalog-table__td.text-red
+												span.button-with-catalog от 100 штук 
+											td.c-catalog-table__td.text-separated-blue.fs-12 1 (шт)
+
+										tr.c-catalog-table__tr
+											td.c-catalog-table__td.text-separated-blue.fs-18 53.10 ₽
+											td.c-catalog-table__td.text-separated-blue.fs-12
+												span.button-with-catalog от 1 шт.
+											td.c-catalog-table__td
+												.button-with-model SN-5640
+									
+			
+
+									footer.c-catalog__foo
+										button.button.button_type_button.button_theme_yellow.button_size_sm.c-catalog__button Заказать в 1 клик
+										.c-catalog__buy
+											.field-count.c-catalog__buy-field
+												button.field-count__button.field-count__button_disable.field-count__button_less(disabled) -
+												input.field-count__field(type="text" value="1")
+												button.field-count__button.field-count__button_more +
+											button.button.button_theme_blue.button_size_sm.c-catalog__buy-button
+												img.button__icon(src="images/basket.png", alt="" width="18" height="19")
+												| В корзину
+						button.button.button_size_sm.button_theme_blue.s-catalog-news__button все новые поступления
+
+		include pug/customers-about
+		include pug/logo-brands
+		include pug/last-news
+		.sm-hidden.md-hidden.lg-hidden: include pug/aside-we
+		include pug/contact
+		include pug/foo
+		div(style="display: none")
+			svg(width="0" height="0" hidden version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink")
+				defs
+					symbol(id="heart" viewBox="0 0 471.701 471.701")
+						path(d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1   c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3   l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4   C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3   s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4   c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3   C444.801,187.101,434.001,213.101,414.401,232.701z")
+
+					symbol(id="basket" viewBox="0 0 510 510")
+						path(d="M153,408c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S181.05,408,153,408z M0,0v51h51l91.8,193.8L107.1,306			c-2.55,7.65-5.1,17.85-5.1,25.5c0,28.05,22.95,51,51,51h306v-51H163.2c-2.55,0-5.1-2.55-5.1-5.1v-2.551l22.95-43.35h188.7			c20.4,0,35.7-10.2,43.35-25.5L504.9,89.25c5.1-5.1,5.1-7.65,5.1-12.75c0-15.3-10.2-25.5-25.5-25.5H107.1L84.15,0H0z M408,408			c-28.05,0-51,22.95-51,51s22.95,51,51,51s51-22.95,51-51S436.05,408,408,408z")
+					symbol(id="search" viewBox="0 0 56.966 56.966")
+						path(d="M55.146,51.887L41.588,37.786c3.486-4.144,5.396-9.358,5.396-14.786c0-12.682-10.318-23-23-23s-23,10.318-23,23 s10.318,23,23,23c4.761,0,9.298-1.436,13.177-4.162l13.661,14.208c0.571,0.593,1.339,0.92,2.162,0.92 c0.779,0,1.518-0.297,2.079-0.837C56.255,54.982,56.293,53.08,55.146,51.887z M23.984,6c9.374,0,17,7.626,17,17s-7.626,17-17,17 s-17-7.626-17-17S14.61,6,23.984,6z")
+		.mobile-menu
+			header.mobile-menu__header
+				.mobile-menu__menu
+					.mobile-menu__icon.fa.fa-bars
+					.mobile-menu__label Меню 
+				.mobile-menu__close.fa.fa-times
+			ul.mobile-menu__list
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon.fa.fa-th-large 
+						.mobile-menu__label Каталог товаров
+
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon.fa.fa-shopping-basket 
+						.mobile-menu__label Корзина
+						.mobile-menu__badge 25
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon.fa.fa-user
+						.mobile-menu__label Личный кабинет
+
+				li.mobile-menu__item.mobile-menu__item_open
+					a.mobile-menu__link
+						.mobile-menu__icon
+						.mobile-menu__label Информация
+						.mobile-menu__caret.fa.fa-chevron-down
+					ul.mobile-menu__sublist#mobile-menu-info
+						li.mobile-menu__item: a.mobile-menu__link(href="#") О компании
+						li.mobile-menu__item: a.mobile-menu__link(href="#") Доставка и оплата
+						li.mobile-menu__item: a.mobile-menu__link(href="#") Прайс лист	
+						li.mobile-menu__item: a.mobile-menu__link(href="#") купим (постоянно)
+						li.mobile-menu__item: a.mobile-menu__link(href="#") Оплата QIWI
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon
+						.mobile-menu__label Служба поддержки
+						.mobile-menu__caret.fa.fa-chevron-down
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon
+						.mobile-menu__label Дополнительно
+						.mobile-menu__caret.fa.fa-chevron-down
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon
+						.mobile-menu__label Связаться с нами
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon.fa.fa-phone
+						.mobile-menu__label +7 (8162) 33-90-66
+				li.mobile-menu__item
+					a.mobile-menu__link(href="#")
+						.mobile-menu__icon
+						.mobile-menu__label Полная версия сайта
+
+		.mobile-search.hidden
+			.mobile-search__header
+				.mobile-search__label Поиск
+				.mobile-search__close.fa.fa-times
+			.mobile-search__main
+				.ui-search-header
+					input.ui-search-header__field(type="search" placeholder="Номер детали/ключевое слово")
+					.ui-search-header__category
+						.ui-search-header-category
+							.ui-search-header-category__current
+								.ui-search-header-category__label Во всех категориях
+								.ui-search-header-category__arrow.fa.fa-caret-down
+					button.ui-search-header__button.fa.fa-search
+		link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/css/swiper.min.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js")
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/js/bootstrap.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.6/js/swiper.min.js")
+		script(src="js/main.js")
+
+
